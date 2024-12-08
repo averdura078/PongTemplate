@@ -21,8 +21,8 @@ namespace Pong
         int player2Score = 0;
 
         int playerSpeed = 4;
-        int ballXSpeed = -6;
-        int ballYSpeed = 6;
+        int ballXSpeed = -4;
+        int ballYSpeed = 4;
 
         bool wPressed = false;
         bool sPressed = false;
@@ -144,6 +144,7 @@ namespace Pong
                 player2.Y = 170;
             }
 
+            //check if game over
             if (player1Score == 3)
             {
                 gameTimer.Stop();
@@ -153,7 +154,7 @@ namespace Pong
                 gameTimer.Stop();
             }
 
-            //paint
+            //paint screen
             Refresh();
         }
 
